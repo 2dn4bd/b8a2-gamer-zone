@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .header{
     margin: 0px 240px 0px 240px;
@@ -270,6 +271,187 @@ nav ul{
     position: absolute;
     width: 60%;
 }
+.item-container{
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-box{
+    display:flex;
+    border-radius: 50px;
+    background: #FFF;
+    align-items: center;
+    padding: 0px 20px 5px 0px;
+}
+.item-box:hover{
+    border: 2px solid #F948B2;
+}
+.item-main-flex{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.game-container{
+    padding: 100px 55px;
+    margin-top: 120px;
+
+}
+
+.game-name-style{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.game-name-style li{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 50px;
+    transition: 0.2s;
+    
+}
+.geme-name-style li >span{
+    color: #0B0223;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.2s;
+}
+.game-name-style li:hover{
+    background: #FFF;
+    cursor: pointer;
+    border: 2px solid #F948B2;
+}
+
+.game-name-style li:hover span{
+    color: #F948B2;
+}
+.footer-menu ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+.footer-menu ul > li{
+    flex-basis: 25%;
+   
+}
+
+.footer-bottom-menu ul{
+    margin: 0;
+}
+
+
+.footer-bottom-menu ul li {
+    flex-basis: calc((100% - 50px)/2);
+}
+
+.footer-icon{
+    gap: 23px;
+}
+
+
+.footer-icon svg{
+    flex-basis: 25%;
+}
+
+footer{
+    margin-top: 70px;
+}
+
+.games-top-content{
+    text-align: center;
+    padding: 0px 40px;
+}
+.games-top-content p{
+    line-height: 28px;
+    margin-top: 5px;
+}
+
+footer{
+    background-color: #0B0223;
+    padding: 100px 0px;
+    
+}
+
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-logo-text img{
+    width: 70px;
+    height: 35px;
+}
+.footer-logo-text h3{
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.footer-menu ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 30px 0px;
+    flex-wrap: nowrap;
+    padding: 20px;
+    font-size: 16;
+}
+.footer-menu ul li a{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+.footer-menu ul li a:hover{
+     color: rgba(255, 255, 255, 0.60);
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.footer-icon svg{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.footer-bottom-menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.footer-bottom-menu ul li a,.footer-bottom-copyright-text p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 13px;
+    font-weight: 500;
+}
+
 /* this is media query for mobile responsive */
 @media screen and (max-width:425px){
     .navbar{
@@ -334,7 +516,77 @@ nav ul{
     }
     .download-title{
         text-align: center;
-    }
+}
+.game-section-two{
+    padding: 0 25px;
+}
+.game-name-style{
+    justify-content: space-between;
+    gap: 10px;
+}
+.game-name-style li{
+    width: 30%;
+
+}
+.game-name-style li img{
+    width: 40%;
+}
+.game-name-style li span{
+    font-size: 13px;
+}
+.game-section-two{
+    margin-top: 50px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.footer-menu ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+.footer-menu ul > li{
+    flex-basis: 25%;
+   
+}
+.footer-icon{
+    padding: 0;
+    gap: 0;
+}
+.footer-bottom-menu ul{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer-container{
+    padding: 0;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.footer-bottom-menu ul li {
+    flex-basis: calc((100% - 50px)/2);
+}
+
+.footer-icon{
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+
+.footer-icon svg{
+    flex-basis: 25%;
+}
+
+footer{
+    margin-top: 70px;
+}
+
+.games-top-content{
+    text-align: center;
+    padding: 0px 40px;
+}
+.games-top-content p{
+    line-height: 28px;
+    margin-top: 5px;
+}
 }
 /* this is media query for tablet responsive */
 @media screen and (min-width:425px) and (max-width:768px) {
@@ -394,9 +646,13 @@ nav ul{
         top: 55%;
         position: absolute;
         margin-bottom: 0;
-        width: 100%;
+        width: 46%;
     }
     .download-right-content .hourse-img{
-        width: 100%;
+    width: 100%;
+    }
+    .game-section-two{
+        margin-top: 100px;
+        flex-wrap: wrap;
     }
 }
